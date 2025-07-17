@@ -5,13 +5,13 @@ const InformacionContacto = () => {
     <section className="w-full bg-white px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       {/* Información de contacto */}
       <div>
-        <h2 className="text-3xl font-bold text-[#002c5f] mb-4">Contacto</h2>
+        <h2 className="text-3xl font-bold text-[#A0110C] mb-4">Contacto</h2>
         <p className="text-sm font-medium text-gray-700 mb-6">
           ¿Tienes algo en mente? Hablemos. <br /> Estamos aquí para ayudarte. Completa el
           formulario o contáctanos en los siguientes medios y nos pondremos en contacto contigo lo antes posible.
         </p>
 
-        <h3 className="text-xl font-semibold text-[#002c5f] mb-4">
+        <h3 className="text-xl font-semibold text-[#A0110C] mb-4">
           Información de contacto
         </h3>
 
@@ -46,7 +46,7 @@ const InformacionContacto = () => {
 
       {/* Formulario */}
       <form className="bg-white shadow-md rounded-lg p-6 space-y-4 w-full mx-auto">
-        <h3 className="text-lg font-semibold text-[#002c5f]">Solicitar Información</h3>
+        <h3 className="text-lg font-semibold text-[#A0110C]">Solicitar Información</h3>
 
         <div>
           <label className="block font-medium text-sm mb-1">Nombre completo</label>

@@ -15,10 +15,10 @@ const Header = () => {
             <div className="flex justify-between items-center">
                 {/* Logo y navegación izquierda */}
                 <div className="flex items-center space-x-5">
-                    <Image src="/triaso_logo.png" alt="Logo" width={100} height={100} />
+                    <Image className='bg-white rounded-full p-3' src="/triaso_logo.png" alt="Logo" width={100} height={100} />
                     <div className="hidden lg:flex space-x-5">
-                        <NavigationButton text="Fabricación" />
-                        <NavigationButton text="Remolques" />
+                        <NavigationButton text="Fabricación" href='/' />
+                        <NavigationButton text="Remolques" href='Remolques' />
                     </div>
                 </div>
 
