@@ -1,12 +1,18 @@
 'use client';
 
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import NavigationButton from './NavigationButton';
 import { Menu, X } from 'lucide-react'; // Iconos para el botón hamburguesa
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+    // Definir a dónde debe ir el catálogo según la ruta actual
+    const catalogoHref = pathname.startsWith('/Remolques')
+        ? '/Catalogo'
+        : '/CatalogoPaileria';
 
     const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
@@ -26,7 +32,7 @@ const Header = () => {
                 <nav className="hidden lg:flex space-x-5">
                     <a href="#" className="text-white hover:text-gray-300 font-medium">Inicio</a>
                     <a href="#" className="text-white hover:text-gray-300">Nosotros</a>
-                    <a href="#" className="text-white hover:text-gray-300">Servicios</a>
+                    <a href={catalogoHref} className="text-white hover:text-gray-300">Productos</a>
                     <a href="#" className="text-white hover:text-gray-300">Contacto</a>
                 </nav>
 
